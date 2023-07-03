@@ -11,9 +11,11 @@
         public static double SumSequenceElements(int n)
         {
             double sum = 0;
-            for (int i = 1; i <= n; i++)
+            int i = 1;
+            while (i <= n)
             {
                 sum += 1 / Math.Pow(i, 5);
+                i++;
             }
 
             return sum;

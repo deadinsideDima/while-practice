@@ -11,9 +11,11 @@
         public static double GetSequenceProduct(int n)
         {
             double sum = 1;
-            for (int i = 1; i <= n; i++)
+            int i = 1;
+            while (i <= n)
             {
                 sum *= 1d + (1d / (i * (double)i));
+                i++;
             }
 
             return sum;
