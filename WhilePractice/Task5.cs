@@ -10,7 +10,13 @@
         /// <returns>Product of elements.</returns>
         public static double GetSequenceProduct(int n)
         {
-            throw new NotImplementedException();
+            double sum = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                sum *= 1d + (1d / (i * (double)i));
+            }
+
+            return sum;
         }
     }
 }

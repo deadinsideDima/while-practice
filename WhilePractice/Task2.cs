@@ -10,7 +10,13 @@
         /// <returns>Sum of elements.</returns>
         public static double SumSequenceElements(int n)
         {
-            throw new NotImplementedException();
+            double sum = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                sum += Math.Pow(-1, i + 1) * 1 / ((i + 1) * (double)i);
+            }
+
+            return sum;
         }
     }
 }
